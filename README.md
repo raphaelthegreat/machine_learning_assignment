@@ -18,6 +18,12 @@
 Κάνοντας μια γρήγορη αναζήτηση στο ιντερνετ βρήκα αυτό το άρθρο https://nagadakos.github.io/2018/09/23/dropout-effect-discussion/ που πρότεινε τη χρήση Dropout επιπέδων για αποφυγή overfitting,
 άρα ήταν η πρώτη βελτίωση που τέσταρα.
 
+Επίσης βρήκα και τη μέθοδο του batch normalization (https://medium.com/@anderaquerretamontoro/99-46-accuracy-on-mnist-without-cnn-712042530420) όπου η έξοδος κάθε επιπέδου του δικτύου κανονικοποιείται
+πριν την τροφοδοσία της στο επόμενο επίπεδο. Μόνο αυτή η αλλαγή είχε καλή βελτίωση στο accuracy φέρνοντας το κοντά στο 0.9932. Για την υλοποίηση πρόσθεσα ένα tf.keras.layers.Flatten(input_shape=(28, 28)), layer μετά το input και tf.keras.layers.BatchNormalization() μετα απο κάθε hidden layer για την κανονικοποίηση.
+
+
+Εκτός από 
+
 ### New hyperparameters
 
 Learning Rate = 0.003
