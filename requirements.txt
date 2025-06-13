@@ -1,0 +1,10 @@
+Name: tensorflow
+Version: 2.18.0
+Summary: TensorFlow is an open source machine learning framework for everyone.
+Home-page: https://www.tensorflow.org/
+Author: Google Inc.
+Author-email: packages@tensorflow.org
+License: Apache 2.0
+Location: /usr/local/lib/python3.11/dist-packages
+Requires: absl-py, astunparse, flatbuffers, gast, google-pasta, grpcio, h5py, keras, libclang, ml-dtypes, numpy, opt-einsum, packaging, protobuf, requests, setuptools, six, tensorboard, tensorflow-io-gcs-filesystem, termcolor, typing-extensions, wrapt
+Required-by: dopamine_rl, tensorflow-text, tensorflow_decision_forests, tf_keras
